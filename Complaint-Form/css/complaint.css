@@ -1,0 +1,58 @@
+body{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    background-image: url(../images/signup-bgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center center;
+    padding: 15px 0;}
+
+h2 {
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: #1AA657;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px; }
+
+.container {
+    width: 660px;
+    position: relative;
+    margin: 0 auto; }
+
+.issue-content {
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    padding: 50px 85px; }
+
+
+.submit{
+    background-color: #1AA657;
+    color: white;
+    float: right;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: calc(100% - 40px);
+      max-width: 100%; } }
+@media screen and (max-width: 480px) {
+    .issue-content {
+      padding: 50px 25px; } }
+  

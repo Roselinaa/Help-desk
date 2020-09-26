@@ -1,0 +1,855 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+   background-image: url(../img/signup-bgg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   -o-background-size: cover;
+   -ms-background-size: cover;
+   background-position: center center;
+}
+
+.nav-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.btn-toggle-nav{
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(../img/menu-bar.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* .btn-toggle-nav2{
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(/img/closer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    visibility: hidden;
+} */
+
+.btn-toggle-nav:hover{
+    opacity: 0.5;
+}
+
+.logo{
+    width: 150px;
+    height: 100%;
+    margin-left: 84.4%;
+}
+
+.nav-sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul{
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-sidebar ul li{
+  line-height: 60px;
+  list-style: none;
+}
+.nav-sidebar ul li span, .nav-sidebar ul li a{
+  display: block;
+  height: 60px;
+  padding: 0, 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  /* opacity: 0; */
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover{
+   background-color: #222;
+  }
+  
+
+
+.first{
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+    /* margin-left: 30px; */
+    padding: 60px;
+    flex-wrap: wrap;
+}
+.second{
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.fourth{
+    background-color: white;
+    color: #1aa657; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;  
+    border-radius: 10%;
+    border-color: white;
+}
+.fifth{
+   margin-top: 20px;
+   flex-wrap: wrap;
+}
+
+.head1 {
+    background-color: transparent;
+    text-align: center;
+}
+
+.head1 h5{
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head2{
+        color: white;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+}
+
+.head2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(17, 16, 16);
+}
+
+.card{
+ height: 150px;
+ width: 100%;
+ border: none;
+ background-color: transparent;
+ /* opacity: 0.5; */
+}
+
+.card-VO{
+    background-image: url(../img/V.O.jpg);
+    /* background-repeat: inherit; */
+}
+
+.card-MR{
+    background-image: url(../img/MarketResearch.jpg);
+}
+
+.card-DS{
+    background-image: url(../img/DigitalSolutions.jpg);
+}
+
+.card-DA{
+    background-image: url(../img/DataAnalyst.jpg);
+}
+
+.card a{
+    color: rgb(17, 16, 16);
+}
+
+.card p{
+    color: whitesmoke;
+}
+
+.card:hover{
+    background-color: #1AA657;
+    opacity: 0.7;
+}
+
+.sixth{
+    width: 200px;
+    height: 150px;
+}
+
+.footer{
+    color: #1b1b1b;
+    text-align: center;
+    bottom: 0;
+    font-size: 10px;
+}
+
+/* full body media query */
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%; } 
+}
+/* full body media query */
+
+@media only screen and (max-width: 1154px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 81.7%;
+    }
+}
+
+@media only screen and (max-width: 1146px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 81.6%;
+    }
+}
+
+@media only screen and (max-width: 1102px){
+    .btn-toggle-nav{
+        width:60px;
+        height: 100%;
+        background-color: rgb(10, 146, 67);
+        background-image: url(/img/menu-bar.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        cursor: pointer;
+    } 
+    .logo{
+        visibility: hidden;
+    }
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+        margin-top: 5px;
+        /* margin-left: 30px; */
+        padding: 60px;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+    }
+    .head1 {
+        background-color: transparent;
+        text-align: center;
+    }
+    .card{
+     height: 180px;
+     width: 100%;
+     border: none;
+    }
+    .sixth{
+        width: 150px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 79.4%;
+    }
+    .card{
+        height: 180px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 200px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 989px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 79.4%;
+    }
+    /* .third{
+        width: 15%;
+        margin-top: 50px;
+        margin-left: 95px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 200px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 200px;
+        /* width: 100%; */
+        border: none;
+    }
+    .sixth{
+        width: 170px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 758px){
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .fifth{
+        margin-top: 20px;
+        margin-left: 50px;
+        flex-wrap: wrap;
+     }
+     
+    
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 50px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: small;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        /* margin-left: 30px; */
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 612px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 50px;
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: medium;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        /* margin-left: 30px; */
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 40px;
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: medium;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        /* margin-left: 30px; */
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 45px;
+        /* margin-right: 50px; */
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: small;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 30px;
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 446px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 45px;
+        /* margin-right: 50px; */
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: small;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 30px;
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .nav-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: calc(100vh - 60px);
+        padding: 0 5px;
+        background-color: #1b1b1b;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    } 
+    .fifth{
+        margin-top: 20px;
+        margin-left: 45px;
+        /* margin-right: 50px; */
+        flex-wrap: wrap;
+     }
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 72.5%;
+    }
+    /* .third{
+        width: 15%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: white;
+    } */
+    .card{
+        height: 230px;
+        width: 100%;
+        border: none;
+    }
+    .sixth{
+        width: 70px;
+        height: 50px;
+    }
+    .head2 a{
+        font-size: small;
+    }
+    .first{
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 30px;
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+    .second{
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+    .fourth{
+        background-color: white;
+        color: #1aa657; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;  
+        border-radius: 10%;
+        border-color: white;
+        font-size: 10px;
+    }
+}
+
